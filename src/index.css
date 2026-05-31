@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { font-family: 'Outfit', sans-serif; }
+.font-display { font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.card-hover {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.card-hover:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeInUp 0.4s ease forwards; }
+.animate-fade-in-delay-1 { animation: fadeInUp 0.4s ease 0.1s forwards; opacity: 0; }
+.animate-fade-in-delay-2 { animation: fadeInUp 0.4s ease 0.2s forwards; opacity: 0; }
+.animate-fade-in-delay-3 { animation: fadeInUp 0.4s ease 0.3s forwards; opacity: 0; }
+.animate-fade-in-delay-4 { animation: fadeInUp 0.4s ease 0.4s forwards; opacity: 0; }
